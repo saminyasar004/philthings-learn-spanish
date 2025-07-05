@@ -21,7 +21,7 @@ export default function ForgotPassword() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="email"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Your Email
 					</Label>
@@ -30,11 +30,11 @@ export default function ForgotPassword() {
 							id="email"
 							type="email"
 							name="email"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter email"
 						/>
 						<Mail
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 					</div>
@@ -46,7 +46,7 @@ export default function ForgotPassword() {
 
 				<div className="form-group w-full flex items-center justify-center gap-2">
 					<p>Remember Password?</p>
-					<Link to="/login" className="text-[#6A0DAD]">
+					<Link to="/login" className="text-primary underline">
 						Login
 					</Link>
 				</div>

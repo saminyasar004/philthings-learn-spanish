@@ -68,7 +68,7 @@ export function AdminDashboardSidebar({
 											className="group/collapsible"
 										>
 											<CollapsibleTrigger asChild>
-												<SidebarMenuButton className="hover:bg-[#567eb4] hover:text-white transition-all duration-300 focus-visible:bg-[#567eb4] focus-visible:text-white data-[state=open]:hover:bg-[#567eb4] data-[state=open]:hover:text-white data-[active=true]:bg-[#567eb4] data-[active=true]:text-white">
+												<SidebarMenuButton className="hover:bg-[#F8D955] hover:text-black transition-all duration-300 focus-visible:bg-[#F8D955] focus-visible:text-white data-[state=open]:hover:bg-[#F8D955] data-[state=open]:hover:text-black data-[active=true]:bg-[#F8D955] data-[active=true]:text-black">
 													<item.icon />
 													<span>{item.title}</span>
 													<ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
@@ -84,7 +84,7 @@ export function AdminDashboardSidebar({
 																}
 															>
 																<SidebarMenuSubButton
-																	className="hover:bg-[#567eb4] hover:text-white transition-all duration-300 focus-visible:bg-[#567eb4] focus-visible:text-white data-[state=open]:hover:bg-[#567eb4] data-[state=open]:hover:text-white data-[active=true]:bg-[#567eb4] data-[active=true]:text-white"
+																	className="hover:bg-[#F8D955] hover:text-black transition-all duration-300 focus-visible:bg-[#F8D955] focus-visible:text-black data-[state=open]:hover:bg-[#F8D955] data-[state=open]:hover:text-black data-[active=true]:bg-[#F8D955] data-[active=true]:text-black"
 																	asChild
 																	isActive={
 																		item.url ===
@@ -95,7 +95,7 @@ export function AdminDashboardSidebar({
 																		to={
 																			child.url
 																		}
-																		className="hover:bg-[#567eb4] hover:text-white transition-all duration-300"
+																		className="hover:bg-[#F8D955] hover:text-black transition-all duration-300"
 																	>
 																		{child.icon && (
 																			<child.icon />
@@ -116,7 +116,7 @@ export function AdminDashboardSidebar({
 									) : (
 										<SidebarMenuButton
 											asChild
-											className="hover:bg-[#567eb4] data-[active=true]:bg-[#567eb4] data-[active=true]:text-white hover:text-white transition-all duration-300"
+											className="hover:bg-[#F8D955] data-[active=true]:bg-[#F8D955] data-[active=true]:text-black hover:text-black transition-all duration-300"
 											isActive={
 												item.url === location.pathname
 											}
@@ -133,7 +133,7 @@ export function AdminDashboardSidebar({
 					</SidebarGroupContent>
 				</SidebarGroup>
 
-				<SidebarFooter className="w-full min-h-max h-[5vh] flex flex-col items-end justify-end absolute bottom-0 py-4 space-y-24 bg-[#284468]">
+				<SidebarFooter className="w-full min-h-max h-[5vh] flex flex-col items-end justify-end absolute bottom-0 py-4 space-y-24 bg-[#F8D955] text-black">
 					<div className="w-full flex gap-2 items-center justify-between">
 						<Link to="/profile">
 							<div className="flex-1 flex items-center gap-2 px-4">
@@ -153,7 +153,7 @@ export function AdminDashboardSidebar({
 								<Button
 									variant="ghost"
 									size="icon"
-									className="border-none hover:bg-transparent text-white/80 hover:text-white text-4xl"
+									className="border-none hover:bg-transparent text-black/80 hover:text-black text-4xl"
 								>
 									<LogOut />
 								</Button>

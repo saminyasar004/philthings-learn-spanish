@@ -24,7 +24,7 @@ export default function Login() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="email"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Your Email
 					</Label>
@@ -33,11 +33,11 @@ export default function Login() {
 							id="email"
 							type="email"
 							name="email"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter email"
 						/>
 						<Mail
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 					</div>
@@ -46,7 +46,7 @@ export default function Login() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="password"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Password
 					</Label>
@@ -55,11 +55,11 @@ export default function Login() {
 							id="password"
 							type={isHidePassword ? "password" : "text"}
 							name="password"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter password"
 						/>
 						<LockKeyhole
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 						{isHidePassword ? (
@@ -67,7 +67,7 @@ export default function Login() {
 								onClick={() =>
 									setIsHidePassword(!isHidePassword)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						) : (
@@ -75,7 +75,7 @@ export default function Login() {
 								onClick={() =>
 									setIsHidePassword(!isHidePassword)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						)}
@@ -95,7 +95,7 @@ export default function Login() {
 
 					<Link
 						to="/forgot-password"
-						className="text-[#6A0DAD] font-montserrat text-sm font-medium"
+						className="text-primary font-montserrat text-sm font-medium"
 					>
 						Forgot Password?
 					</Link>
@@ -107,7 +107,7 @@ export default function Login() {
 
 				<div className="form-group w-full flex items-center justify-center gap-2">
 					<p>Don't have an account?</p>
-					<Link to="/signup" className="text-[#6A0DAD]">
+					<Link to="/signup" className="text-primary underline">
 						Sign Up
 					</Link>
 				</div>

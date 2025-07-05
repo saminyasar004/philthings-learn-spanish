@@ -28,7 +28,7 @@ export default function Header() {
 	];
 
 	return (
-		<header className="bg-[#FCFCFF] py-3 border border-b border-[#E9E9E9]">
+		<header className="border border-b border-[#E9E9E9] bg-white/50 py-3 sticky top-0 z-50 backdrop-blur-lg shadow-sm transition-all duration-300 ease-in-out">
 			<div className="container grid grid-cols-2 lg:grid-cols-3 gap-2">
 				<div className="logo w-full flex items-center justify-start">
 					<Link to="/">

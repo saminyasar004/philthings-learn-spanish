@@ -13,11 +13,11 @@ export default function Home() {
 			<Hero />
 			<AIChatOverview />
 			<Features />
-			<Process />
+			{/* <Process /> */}
 			<Faq />
-			<Pricing />
+			{/* <Pricing /> */}
 			<Testimonial />
-			<CTA />
+			{/* <CTA /> */}
 		</>
 	);
 }

@@ -51,7 +51,7 @@ export default function Profile() {
 						<div className="form-group space-y-2 w-full">
 							<Label
 								htmlFor="username"
-								className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+								className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 							>
 								Username
 							</Label>
@@ -85,7 +85,7 @@ export default function Profile() {
 						<div className="form-group space-y-2 w-full">
 							<Label
 								htmlFor="confirm-password"
-								className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+								className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 							>
 								Confirm Password
 							</Label>
@@ -132,7 +132,7 @@ export default function Profile() {
 						<div className="form-group space-y-2 w-full">
 							<Label
 								htmlFor="new-password"
-								className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+								className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 							>
 								New Password
 							</Label>
@@ -177,7 +177,7 @@ export default function Profile() {
 						<div className="form-group space-y-2 w-full">
 							<Label
 								htmlFor="confirm-new-password"
-								className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+								className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 							>
 								Confirm New Password
 							</Label>

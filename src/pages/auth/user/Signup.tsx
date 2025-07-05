@@ -1,18 +1,14 @@
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
 import { useState } from "react";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "@/redux/store";
 
 export default function Signup() {
 	const [isHidePassword, setIsHidePassword] = useState(false);
 	const [isHideConfirmPassword, setIsHideConfirmPassword] = useState(false);
-
-	const dispatch = useDispatch<AppDispatch>();
 
 	return (
 		<div className="max-w-3xl h-svh flex flex-col items-start justify-center gap-5">
@@ -30,7 +26,7 @@ export default function Signup() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="name"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Your Name
 					</Label>
@@ -39,11 +35,11 @@ export default function Signup() {
 							id="name"
 							type="text"
 							name="name"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter email"
 						/>
 						<Mail
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 					</div>
@@ -52,7 +48,7 @@ export default function Signup() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="email"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Your Email
 					</Label>
@@ -61,11 +57,11 @@ export default function Signup() {
 							id="email"
 							type="email"
 							name="email"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter email"
 						/>
 						<Mail
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 					</div>
@@ -74,7 +70,7 @@ export default function Signup() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="password"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Password
 					</Label>
@@ -83,11 +79,11 @@ export default function Signup() {
 							id="password"
 							type={isHidePassword ? "password" : "text"}
 							name="password"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Enter new password"
 						/>
 						<LockKeyhole
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 						{isHidePassword ? (
@@ -95,7 +91,7 @@ export default function Signup() {
 								onClick={() =>
 									setIsHidePassword(!isHidePassword)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						) : (
@@ -103,7 +99,7 @@ export default function Signup() {
 								onClick={() =>
 									setIsHidePassword(!isHidePassword)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						)}
@@ -113,7 +109,7 @@ export default function Signup() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="password"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Confirm Password
 					</Label>
@@ -122,11 +118,11 @@ export default function Signup() {
 							id="password"
 							type={isHideConfirmPassword ? "password" : "text"}
 							name="password"
-							className="w-full pl-12 rounded-3xl bg-[#f7f7fd] font-montserrat"
+							className="w-full pl-12 rounded-3xl bg-[#ebf0ee] font-montserrat"
 							placeholder="Confirm new password"
 						/>
 						<LockKeyhole
-							className="text-[#1A237E] absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
+							className="text-primary absolute top-1/2 -translate-y-1/2 left-5 pointer-events-none"
 							size={14}
 						/>
 						{isHideConfirmPassword ? (
@@ -136,7 +132,7 @@ export default function Signup() {
 										!isHideConfirmPassword
 									)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						) : (
@@ -146,7 +142,7 @@ export default function Signup() {
 										!isHideConfirmPassword
 									)
 								}
-								className="text-[#431D5A] absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
+								className="text-primary absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer"
 								size={14}
 							/>
 						)}
@@ -171,7 +167,7 @@ export default function Signup() {
 
 				<div className="form-group w-full flex items-center justify-center gap-2">
 					<p>Already have an account?</p>
-					<Link to="/login" className="text-[#6A0DAD]">
+					<Link to="/login" className="text-primary underline">
 						Login
 					</Link>
 				</div>

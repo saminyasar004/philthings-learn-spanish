@@ -61,13 +61,13 @@ export default function Testimonial() {
 	];
 
 	return (
-		<section className="py-20 bg-[#eaeef4]">
+		<section className="py-20">
 			<div className="container relative overflow-hidden">
 				<div className="w-full flex flex-col items-center justify-center gap-3">
-					<SectionHeader
+					{/* <SectionHeader
 						title="TESTIMONIAL"
 						className="justify-start mb-5"
-					/>
+					/> */}
 
 					<div className="w-full flex flex-col items-center justify-center gap-3">
 						<h2 className="font-semibold text-3xl md:text-5xl text-primary">
@@ -85,7 +85,7 @@ export default function Testimonial() {
 					<Carousel
 						opts={{
 							loop: true,
-							duration: 500,
+							duration: 20,
 						}}
 						className="w-full max-w-4xl mx-auto"
 					>

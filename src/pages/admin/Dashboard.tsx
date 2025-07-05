@@ -56,7 +56,7 @@ const affiliateClicksChartData = [
 	{
 		affiliate: "Affiliate Clicks ",
 		clicks: 50000,
-		fill: "#2B5388",
+		fill: "#06402B",
 	},
 ];
 
@@ -161,12 +161,12 @@ export default function AdminDashboard() {
 									>
 										<stop
 											offset="5%"
-											stopColor="#567eb4"
+											stopColor="#F8D955"
 											stopOpacity={0.8}
 										/>
 										<stop
 											offset="95%"
-											stopColor="#567eb4"
+											stopColor="#F8D955"
 											stopOpacity={0.1}
 										/>
 									</linearGradient>
@@ -190,7 +190,7 @@ export default function AdminDashboard() {
 								<Area
 									type="monotone"
 									dataKey="revenue"
-									stroke="#567eb4"
+									stroke="#F8D955"
 									fill="url(#fillRevenue)"
 									dot={true}
 								/>

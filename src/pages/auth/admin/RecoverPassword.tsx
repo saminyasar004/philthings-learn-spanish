@@ -21,7 +21,7 @@ export default function RecoverPassword() {
 					<div className="form-group space-y-2 w-full">
 						<Label
 							htmlFor="email"
-							className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+							className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 						>
 							Your Email
 						</Label>

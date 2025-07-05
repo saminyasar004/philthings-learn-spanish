@@ -5,7 +5,7 @@ export default function AIChatOverview() {
 	return (
 		<section className="py-24">
 			<div className="container">
-				<SectionHeader className="mb-7" title="AI CHATBOT" />
+				{/* <SectionHeader className="mb-7" title="AI CHATBOT" /> */}
 
 				<div className="w-full flex flex-col items-center justify-center gap-3 md:gap-6 text-center">
 					<h2 className="font-semibold text-3xl md:text-5xl text-primary">

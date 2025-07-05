@@ -6,7 +6,7 @@ export default function PasswordChanged() {
 	return (
 		<div className="max-w-3xl h-svh flex flex-col items-start justify-center gap-5">
 			<div className="w-full flex flex-col items-center justify-center gap-3 text-center">
-				<BadgeCheck size={143} fill="#2b5388" className="text-white" />
+				<BadgeCheck size={143} fill="#06402B" className="text-white" />
 
 				<h1 className="text-6xl font-semibold text-primary">
 					Password Changed!

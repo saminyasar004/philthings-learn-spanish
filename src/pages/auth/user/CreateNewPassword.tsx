@@ -23,7 +23,7 @@ export default function CreateNewPassword() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="password"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Password
 					</Label>
@@ -62,7 +62,7 @@ export default function CreateNewPassword() {
 				<div className="form-group space-y-2 w-full">
 					<Label
 						htmlFor="password"
-						className="font-lora font-normal text-base text-[#2B5388] cursor-pointer"
+						className="font-lora font-normal text-base text-[#06402B] cursor-pointer"
 					>
 						Confirm Password
 					</Label>

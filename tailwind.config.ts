@@ -26,9 +26,9 @@ export default {
 				montserrat: ["Montserrat", "serif"],
 			},
 			colors: {
-				primary: "#2B5388",
+				primary: "#06402B",
 				"dark-blue": "#112C50",
-				secondary: "#6A0DAD",
+				secondary: "#F8D955",
 				danger: "#ff523b",
 				warning: "#FFD700",
 				sidebar: {

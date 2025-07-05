@@ -11,7 +11,7 @@ export default function VerifyOTP() {
 				</h1>
 				<p className="text-lg font-montserrat font-medium text-[#2A2A2A]">
 					Enter the code sent to{" "}
-					<span className="text-[#6A0DAD]">
+					<span className="text-primary underline">
 						someone.example@gmail.com
 					</span>
 				</p>
@@ -41,7 +41,7 @@ export default function VerifyOTP() {
 					<Button
 						variant="link"
 						size="icon"
-						className="text-[#6A0DAD] text-base font-medium"
+						className="text-primary underline text-base font-medium"
 					>
 						Resend
 					</Button>

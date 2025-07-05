@@ -17,7 +17,7 @@ export default function ChatLayout({
 				<div className="w-full">
 					<div className="header sticky min-h-max h-[10vh] py-4">
 						<h1 className="font-montserrat font-semibold text-3xl text-primary">
-							Chat AI Assistant
+							Spanish Chat
 						</h1>
 					</div>
 
