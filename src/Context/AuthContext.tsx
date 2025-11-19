@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const login = async (email: string, password: string) => {
     try {
-      const res = await fetch("http://192.168.10.124:2100/api/v1/accounts/login/", {
+      const res = await fetch("http://172.252.13.96:5000/api/v1/accounts/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const signup = async (name: string, email: string, password: string) => {
     try {
-      const res = await fetch("http://192.168.10.124:2100/api/v1/accounts/signup/", {
+      const res = await fetch("http://172.252.13.96:5000/api/v1/accounts/signup/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const requestPasswordReset = async (email: string) => {
     try {
-      const res = await fetch("http://192.168.10.124:2100/api/v1/accounts/pass-reset-request/", {
+      const res = await fetch("http://172.252.13.96:5000/api/v1/accounts/pass-reset-request/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -122,7 +122,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const verifyOtp = async (email: string, otp: string) => {
     try {
-      const res = await fetch("http://192.168.10.124:2100/api/v1/accounts/reset-request-activate/", {
+      const res = await fetch("http://172.252.13.96:5000/api/v1/accounts/reset-request-activate/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -146,7 +146,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const resetPassword = async (newPassword: string) => {
     try {
-      const res = await fetch("http://192.168.10.124:2100/api/v1/accounts/reset-password/", {
+      const res = await fetch("http://172.252.13.96:5000/api/v1/accounts/reset-password/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

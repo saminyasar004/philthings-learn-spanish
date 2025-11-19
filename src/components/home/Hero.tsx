@@ -7,7 +7,7 @@ import DoodlesGroup from "@/assets/doodles-group.svg";
 
 export default function Hero() {
 	return (
-		<section className="py-12 md:py-24">
+		<section id="hero" className="py-12 md:py-24">
 			<div className="container relative flex flex-col gap-8">
 				<div className="w-full flex flex-col gap-1 items-center text-center md:pt-6 mb-12">
 					<h1 className="text-3xl md:text-6xl font-bold text-primary">

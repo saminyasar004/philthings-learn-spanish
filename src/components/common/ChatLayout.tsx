@@ -25,7 +25,7 @@ export default function ChatLayout({
 					const token = localStorage.getItem("accessToken");
 					const headers = token ? { Authorization: `Bearer ${token}` } : {};
 					const response = await axios.get(
-						`http://192.168.10.124:2100/api/v1/chatbot/practice_chat/messages/${id}/`,
+						`http://172.252.13.96:5000/api/v1/chatbot/practice_chat/messages/${id}/`,
 						{ headers }
 					);
 
@@ -102,7 +102,7 @@ export default function ChatLayout({
 			setMessages(prev => [...prev, userMessage]);
 			
 			const response = await axios.post(
-				"http://192.168.10.124:2100/api/v1/chatbot/practice_chat/create/",
+				"http://172.252.13.96:5000/api/v1/chatbot/practice_chat/create/",
 				{
 					chat_id: chatId ? parseInt(chatId) : null,
 					message: inputValue,

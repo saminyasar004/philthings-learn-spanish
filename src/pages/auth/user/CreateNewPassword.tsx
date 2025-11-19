@@ -153,7 +153,7 @@ export default function CreateNewPassword() {
 				throw new Error("Access token not found. Please retry the password reset process.");
 			}
 			
-			const response = await fetch("http://192.168.10.124:2100/api/v1/accounts/reset-password/", {
+			const response = await fetch("http://172.252.13.96:5000/api/v1/accounts/reset-password/", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

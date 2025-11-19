@@ -28,7 +28,7 @@ export default function Faq() {
 	const [expandedFaqId, setExpandedFaqId] = useState<number>(0);
 
 	return (
-		<section className="py-24">
+		<section id="faq" className="py-24">
 			<div className="container relative overflow-hidden py-24 bg-[#e8f4f0]">
 				{/* <div className="w-full flex items-center justify-center lg:justify-start">
 						<img src={SectionBGVector} alt="faq-vector" />

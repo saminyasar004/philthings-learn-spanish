@@ -6,6 +6,11 @@
 @tailwind utilities;
 
 @layer base {
+
+	/* enable smooth scrolling for anchor/hash navigation */
+	html {
+		scroll-behavior: smooth;
+	}
 	* {
 		@apply border-gray-200;
 	}

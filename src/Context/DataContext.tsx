@@ -55,11 +55,11 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const PRIVACY_POLICY_API_URL = 'http://192.168.10.124:2100/api/v1/settings/privacy-policy/';
-  const TERMS_AND_CONDITIONS_API_URL = 'http://192.168.10.124:2100/api/v1/settings/terms-and-conditions/';
-  const DASHBOARD_API_URL = 'http://192.168.10.124:2100/api/v1/dashboard/first-section/';
-  const USER_GROWTH_API_URL = 'http://192.168.10.124:2100/api/v1/dashboard/user-growth/';
-  const USER_DATA_API_URL = 'http://192.168.10.124:2100/api/v1/dashboard/users/';
+  const PRIVACY_POLICY_API_URL = 'http://172.252.13.96:5000/api/v1/settings/privacy-policy/';
+  const TERMS_AND_CONDITIONS_API_URL = 'http://172.252.13.96:5000/api/v1/settings/terms-and-conditions/';
+  const DASHBOARD_API_URL = 'http://172.252.13.96:5000/api/v1/dashboard/first-section/';
+  const USER_GROWTH_API_URL = 'http://172.252.13.96:5000/api/v1/dashboard/user-growth/';
+  const USER_DATA_API_URL = 'http://172.252.13.96:5000/api/v1/dashboard/users/';
 
   const fetchPrivacyPolicy = async () => {
   setLoading(true);

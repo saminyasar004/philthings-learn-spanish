@@ -50,7 +50,7 @@ export default function Features() {
 	];
 
 	return (
-		<section className="py-24">
+		<section id="features" className="py-24">
 			<div className="container relative overflow-hidden py-32">
 				{/* <SectionHeader className="mb-7" title="FEATURES" /> */}
 

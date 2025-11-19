@@ -8,23 +8,23 @@ import { Menu } from "lucide-react";
 export default function Header() {
 	const location = useLocation();
 
+	// Use hash links to scroll to sections on the home page
 	const navMenus = [
 		{
 			name: "Home",
 			path: "/",
+			hash: "hero",
 		},
 		{
 			name: "Features",
-			path: "/features",
+			path: "/",
+			hash: "features",
 		},
 		{
 			name: "FAQ",
-			path: "/faq",
+			path: "/",
+			hash: "faq",
 		},
-		// {
-		// 	name: "ChatAI",
-		// 	path: "/chat",
-		// },
 	];
 
 	return (
@@ -37,19 +37,29 @@ export default function Header() {
 				</div>
 				<div className="nav-menu hidden lg:flex items-center justify-center">
 					<ul className="w-full flex items-center justify-center gap-12 text-lg font-semibold">
-						{navMenus.map((navMenu, index) => (
-							<Link
-								to={navMenu.path}
-								key={index}
-								className={cn(
-									location.pathname === navMenu.path &&
-										"text-primary",
-									"hover:text-primary transition-all duration-300"
-								)}
-							>
-								<li>{navMenu.name}</li>
-							</Link>
-						))}
+						{navMenus.map((navMenu, index) => {
+							const to = navMenu.hash
+								? `${navMenu.path}#${navMenu.hash}`
+								: navMenu.path;
+							const isActive =
+								location.pathname === navMenu.path &&
+								(navMenu.hash
+									? location.hash === `#${navMenu.hash}`
+									: !location.hash);
+
+							return (
+								<Link
+									to={to}
+									key={index}
+									className={cn(
+										isActive && "text-primary",
+										"hover:text-primary transition-all duration-300"
+									)}
+								>
+									<li>{navMenu.name}</li>
+								</Link>
+							);
+						})}
 					</ul>
 				</div>
 				<div className="auth-menu hidden lg:flex items-center justify-end gap-4">
@@ -71,20 +81,30 @@ export default function Header() {
 						</SheetTrigger>
 						<SheetContent side="right" className="w-[250px]">
 							<div className="flex flex-col gap-4 mt-4">
-								{navMenus.map((navMenu, index) => (
-									<Link
-										to={navMenu.path}
-										key={index}
-										className={cn(
-											location.pathname ===
-												navMenu.path && "text-primary",
-											"hover:text-primary transition-all duration-300 text-lg font-semibold"
-										)}
-										onClick={() => {}}
-									>
-										{navMenu.name}
-									</Link>
-								))}
+								{navMenus.map((navMenu, index) => {
+									const to = navMenu.hash
+										? `${navMenu.path}#${navMenu.hash}`
+										: navMenu.path;
+									const isActive =
+										location.pathname === navMenu.path &&
+										(navMenu.hash
+											? location.hash === `#${navMenu.hash}`
+											: !location.hash);
+
+									return (
+										<Link
+											to={to}
+											key={index}
+											className={cn(
+												isActive && "text-primary",
+												"hover:text-primary transition-all duration-300 text-lg font-semibold"
+											)}
+											onClick={() => {}}
+										>
+											{navMenu.name}
+										</Link>
+									);
+								})}
 
 								<div className="auth-menu flex items-center justify-end gap-4">
 									<Button variant="transparent">
